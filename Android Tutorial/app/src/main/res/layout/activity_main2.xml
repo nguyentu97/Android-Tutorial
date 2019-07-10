@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCCC"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Xin chao, Nguyen Van A(0961159346)"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+
+        android:elevation="10dp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm tích lũy"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="3000"
+                android:textColor="#FF0000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_dollar2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="#FF0000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/ic1"
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:src="@drawable/ic_1" />
+
+            <ImageView
+                android:id="@+id/ic2"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:layout_toRightOf="@id/ic1"
+                android:src="@drawable/ic_2" />
+
+            <ImageView
+                android:id="@+id/ic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/ic2"
+                android:src="@drawable/ic_3" />
+
+            <ImageView
+                android:id="@+id/ic4"
+                android:layout_width="77dp"
+                android:layout_height="63dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_4" />
+
+            <ImageView
+                android:id="@+id/ic5"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="52dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/ic4"
+                android:src="@drawable/ic_5" />
+
+            <ImageView
+                android:id="@+id/ic6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/ic5"
+                android:src="@drawable/ic_6" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
