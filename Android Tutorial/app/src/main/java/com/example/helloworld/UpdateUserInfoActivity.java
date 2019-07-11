@@ -20,6 +20,11 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
 //        edtDate = findViewById(R.id.edt_Date);
 //        edtSex = findViewById(R.id.edt_Sex);
 //        edtEmail = findViewById(R.id.edt_Mail);
+
+        init();
+        getData();
+
+
         rlDongY = findViewById(R.id.rl_Dong_Y);
         rlDongY.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,5 +34,19 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    void getData(){
+
+    }
+
+    void init(){
+
+
+
+    }
+
+    public void Back(View view) {
+        finish();
     }
 }

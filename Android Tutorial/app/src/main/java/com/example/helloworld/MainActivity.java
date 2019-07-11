@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
                     Intent intent;
                     intent = new Intent(MainActivity.this, UpdateUserInfoActivity.class);
+                    //startActivity(intent);
+                    //Them du lieu vao trong intent(nhet)
+                    intent.putExtra("PHONENUMBER",phoneNumber);
+                    intent.putExtra("name","NguyenTu");
+
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Nhap sai moi nhap lai", Toast.LENGTH_SHORT).show();

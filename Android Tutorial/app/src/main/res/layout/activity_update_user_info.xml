@@ -4,11 +4,18 @@
     android:background="#FFFCCC"
     android:orientation="vertical">
 
+    <ImageView
+        android:onClick="Back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_back"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
         android:text="Thông tin cơ bản"
         android:textColor="#000000"
         android:textSize="30dp"
@@ -28,11 +35,12 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edt_Ten"
+            android:id="@+id/edt_ten"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center|right"
             android:paddingLeft="10dp"
-            android:textDirection="rtl" />
+            android:text="Nguyen Van A" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +57,8 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edt_Phone"
+            android:text="0961159346"
+            android:id="@+id/edt_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -70,7 +79,8 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edt_Date"
+            android:text="02/03/2003"
+            android:id="@+id/edt_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -91,7 +101,8 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edt_Sex"
+            android:text="Nam"
+            android:id="@+id/edt_sex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -112,7 +123,8 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edt_Mail"
+            android:text="abc@mail.com"
+            android:id="@+id/edt_mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -149,6 +161,7 @@
             android:textSize="20dp" />
 
         <EditText
+            android:text="Ha Noi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -169,6 +182,7 @@
             android:textSize="20dp" />
 
         <EditText
+            android:text="Cau Giay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -189,6 +203,7 @@
             android:textSize="20dp" />
 
         <EditText
+            android:text="Dich Vong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"

@@ -18,42 +18,50 @@
 
     <LinearLayout
 
-        android:elevation="10dp"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
         android:background="@drawable/bg_menu"
+        android:elevation="10dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
             <TextView
+                android:id="@+id/tv_diem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:text="Điểm tích lũy"
                 android:textColor="#000"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_diem2"
+                android:layout_width="62dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginRight="-15dp"
+                android:layout_toLeftOf="@id/img_dollar"
+                android:layout_toRightOf="@id/tv_diem"
                 android:text="3000"
                 android:textColor="#FF0000"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
+                android:id="@+id/img_dollar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
                 android:src="@drawable/ic_dollar2" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
@@ -64,19 +72,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp">
+            android:layout_margin="10dp">
 
             <ImageView
                 android:id="@+id/ic1"
                 android:layout_width="wrap_content"
                 android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
                 android:src="@drawable/ic_1" />
 
             <ImageView
                 android:id="@+id/ic2"
-                android:layout_width="84dp"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="68dp"
+                android:layout_marginLeft="80dp"
                 android:layout_toRightOf="@id/ic1"
                 android:src="@drawable/ic_2" />
 
@@ -84,25 +96,29 @@
                 android:id="@+id/ic3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="58dp"
                 android:layout_toRightOf="@id/ic2"
                 android:src="@drawable/ic_3" />
 
             <ImageView
                 android:id="@+id/ic4"
-                android:layout_width="77dp"
+                android:layout_width="74dp"
                 android:layout_height="63dp"
+                android:layout_below="@id/ic1"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_4" />
 
             <ImageView
                 android:id="@+id/ic5"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="52dp"
-                android:layout_marginBottom="8dp"
+                android:layout_below="@id/ic2"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="14dp"
                 android:layout_toRightOf="@id/ic4"
                 android:src="@drawable/ic_5" />
 
@@ -110,14 +126,262 @@
                 android:id="@+id/ic6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_alignParentBottom="true"
+                android:layout_below="@id/ic3"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="9dp"
                 android:layout_toRightOf="@+id/ic5"
                 android:src="@drawable/ic_6" />
 
         </RelativeLayout>
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tin Tức"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na1"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hello"
+                            android:textSize="30sp"
+                            android:elevation="10dp"
+                            android:textColor="#000"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na2" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="96dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="100dp"
+                            android:text="Khuyen mai den 50%"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na5" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="96dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="100dp"
+                            android:text="Khuyen mai den 50%"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Khuyến Mại"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na1"
+                            />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="96dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="100dp"
+                            android:text="Khuyen mai den 50%"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na2" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="96dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="100dp"
+                            android:text="Khuyen mai den 50%"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bg_menu"
+                            android:elevation="10dp"
+                            android:src="@drawable/na5" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="96dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="100dp"
+                            android:text="Khuyen mai den 50%"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/navigation"/>
 
 
 </LinearLayout>
