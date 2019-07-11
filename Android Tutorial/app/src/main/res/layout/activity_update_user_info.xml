@@ -161,6 +161,7 @@
             android:textSize="20dp" />
 
         <EditText
+            android:id="@+id/edt_provice"
             android:text="Ha Noi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -211,7 +212,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/rl_Dong_Y"
+        android:id="@+id/rl_dong_y"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
