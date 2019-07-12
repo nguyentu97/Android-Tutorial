@@ -12,22 +12,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xin chao,"
             android:textColor="#000"
             android:textSize="20dp" />
+
         <TextView
+            android:layout_marginLeft="5dp"
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Xin chao"
+            android:text="Ho Ten"
             android:textColor="#FF0000"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(sdt)"
+            android:textColor="#000"
             android:textSize="20dp" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -59,10 +69,9 @@
                 android:id="@+id/tv_diem2"
                 android:layout_width="62dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="106dp"
-                android:layout_marginRight="-15dp"
                 android:layout_toLeftOf="@id/img_dollar"
                 android:layout_toRightOf="@id/tv_diem"
+                android:gravity="right"
                 android:text="3000"
                 android:textColor="#FF0000"
                 android:textSize="24dp"
@@ -180,92 +189,147 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na1"
-                            />
-
+                            android:src="@drawable/bom" />
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
-                            android:text="hello"
-                            android:textSize="30sp"
-                            android:elevation="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
                             android:textColor="#000"
-                            />
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na2" />
-
+                            android:src="@drawable/bom2" />
                         <TextView
-                            android:layout_width="83dp"
-                            android:layout_height="96dp"
-                            android:layout_alignParentStart="true"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="25dp"
-                            android:elevation="100dp"
-                            android:text="Khuyen mai den 50%"
-                            android:textColor="#000"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next1"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na5" />
-
+                            android:src="@drawable/bom3" />
                         <TextView
-                            android:layout_width="83dp"
-                            android:layout_height="96dp"
-                            android:layout_alignParentStart="true"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="25dp"
-                            android:elevation="100dp"
-                            android:text="Khuyen mai den 50%"
-                            android:textColor="#000"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next2"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -290,101 +354,316 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na1"
-                            />
-
+                            android:src="@drawable/bom" />
                         <TextView
-                            android:layout_width="83dp"
-                            android:layout_height="96dp"
-                            android:layout_alignParentStart="true"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="25dp"
-                            android:elevation="100dp"
-                            android:text="Khuyen mai den 50%"
-                            android:textColor="#000"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next0"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next0"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na2" />
-
+                            android:src="@drawable/bom2" />
                         <TextView
-                            android:layout_width="83dp"
-                            android:layout_height="96dp"
-                            android:layout_alignParentStart="true"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="25dp"
-                            android:elevation="100dp"
-                            android:text="Khuyen mai den 50%"
-                            android:textColor="#000"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next11"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next11"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
                         <ImageView
                             android:layout_width="320dp"
                             android:layout_height="200dp"
                             android:layout_margin="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/bg_menu"
-                            android:elevation="10dp"
-                            android:src="@drawable/na5" />
-
+                            android:src="@drawable/bom3" />
                         <TextView
-                            android:layout_width="83dp"
-                            android:layout_height="96dp"
-                            android:layout_alignParentStart="true"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="25dp"
-                            android:elevation="100dp"
-                            android:text="Khuyen mai den 50%"
-                            android:textColor="#000"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next22"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
 
-
+                            <ImageView
+                                android:id="@+id/next22"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Giảm Giá"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/bom" />
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next00"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/next00"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/bom2" />
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next111"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/next111"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_menu"
+                        android:elevation="10dp">
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/bom3" />
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="khuyen mai 50%"
+                            android:textColor="#000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="155dp"
+                            android:background="@drawable/chitiet_bg">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@id/next222"
+                                android:text="Chi tiết"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/next222"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
 
 
         </LinearLayout>
@@ -392,10 +671,10 @@
     </ScrollView>
 
     <ImageView
-        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/navigation"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/navigation" />
 
 
 </LinearLayout>

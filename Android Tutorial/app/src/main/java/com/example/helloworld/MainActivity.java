@@ -47,11 +47,12 @@ public class MainActivity extends AppCompatActivity {
                 if (phoneNumberLength > 9) {
                     Toast.makeText(MainActivity.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
                     Intent intent;
-                    intent = new Intent(MainActivity.this, UpdateUserInfoActivity.class);
+//                    intent = new Intent(MainActivity.this, UpdateUserInfoActivity.class);
+                    intent = new Intent(MainActivity.this, AccountActivity.class);
                     //startActivity(intent);
                     //Them du lieu vao trong intent(nhet)
-                    intent.putExtra("PHONENUMBER",phoneNumber);
-                    intent.putExtra("name","NguyenTu");
+/*                    intent.putExtra("PHONENUMBER",phoneNumber);
+                    intent.putExtra("name","NguyenTu");*/
 
                     startActivity(intent);
                 } else {

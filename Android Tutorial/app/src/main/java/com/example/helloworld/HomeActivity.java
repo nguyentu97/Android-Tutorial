@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView txtName;
+    TextView tvName,tvSDT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,11 +19,13 @@ public class HomeActivity extends AppCompatActivity {
     private void getData() {
         Intent intent = getIntent();
         User user = (User)intent.getSerializableExtra("USER");
-        txtName.setText(user.name);
+        tvName.setText(user.name);
+        tvSDT.setText("("+user.phoneNumeber+")");
     }
 
     private void init() {
-        txtName = findViewById(R.id.tv_name);
+        tvName = findViewById(R.id.tv_name);
+        tvSDT = findViewById(R.id.tv_sdt);
     }
 
 }
