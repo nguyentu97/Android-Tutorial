@@ -43,6 +43,7 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
         Intent intent = new Intent(UpdateUserInfoActivity.this, HomeActivity.class);
         intent.putExtra("USER",user);
         startActivity(intent);
+        finish();
 
     }
 

@@ -1,8 +1,10 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
@@ -13,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         init();
-        getData();
+        //getData();
     }
 
     private void getData() {
@@ -21,6 +23,14 @@ public class HomeActivity extends AppCompatActivity {
         User user = (User)intent.getSerializableExtra("USER");
         tvName.setText(user.name);
         tvSDT.setText("("+user.phoneNumeber+")");
+        tvName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               finish();
+
+            }
+        });
     }
 
     private void init() {

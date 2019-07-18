@@ -1,20 +1,22 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         init();
     }
 
@@ -45,24 +47,34 @@ public class MainActivity extends AppCompatActivity {
                 String phoneNumber = edt_phone_number.getText().toString();
                 int phoneNumberLength = phoneNumber.length();
                 if (phoneNumberLength > 9) {
-                    Toast.makeText(MainActivity.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
                     Intent intent;
-//                    intent = new Intent(MainActivity.this, UpdateUserInfoActivity.class);
-                    intent = new Intent(MainActivity.this, AccountActivity.class);
+                    intent = new Intent(LoginActivity.this, UpdateUserInfoActivity.class);
+//                    intent = new Intent(LoginActivity.this, AccountActivity.class);
                     //startActivity(intent);
                     //Them du lieu vao trong intent(nhet)
-/*                    intent.putExtra("PHONENUMBER",phoneNumber);
-                    intent.putExtra("name","NguyenTu");*/
-
+                    intent.putExtra("PHONENUMBER",phoneNumber);
+                    intent.putExtra("name","NguyenTu");
+                    //Luu trang thai dang nhap
+                    setLogin();
                     startActivity(intent);
+                    finish();
                 } else {
-                    Toast.makeText(MainActivity.this, "Nhap sai moi nhap lai", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Nhap sai moi nhap lai", Toast.LENGTH_SHORT).show();
                     edt_phone_number.setText("");
                 }
 //                edt_phone_number.setText("");
-//                Toast.makeText(MainActivity.this, "Nut hong nha!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(LoginActivity.this, "Nut hong nha!", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    void setLogin(){
+        //B1 Tao file
+        SharedPreferences sharedPreferences = getSharedPreferences("dekko",MODE_PRIVATE);
+        //B2 Sua, goi phan mem sua
+        SharedPreferences.Editor editor =  sharedPreferences.edit();
+        editor.putBoolean("isLogin",true);
+        editor.apply();
     }
     //hello
 }
