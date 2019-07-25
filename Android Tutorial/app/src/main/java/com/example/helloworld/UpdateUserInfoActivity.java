@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
 
     RelativeLayout rlDongY;
     EditText edtPhone, edtName, edtDOB, edtProvice, edtMail;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
         user = new User(name,phone,DOB,provice,mail);
 
 
-        Intent intent = new Intent(UpdateUserInfoActivity.this, HomeActivity.class);
+        intent = new Intent(UpdateUserInfoActivity.this, HomeActivity.class);
         intent.putExtra("USER",user);
         startActivity(intent);
         finish();
@@ -49,7 +51,7 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
 
 
     void getData() {
-        Intent intent = getIntent();
+        intent = getIntent();
         String phoneNumber = intent.getStringExtra("PHONENUMBER");
         edtPhone.setText(phoneNumber);
     }
@@ -70,6 +72,12 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
     }
 
     public void Back(View view) {
-        finish();
+        SharedPreferences sharedPreferences = getSharedPreferences("dekko",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.remove("isLogin");
+        editor.putBoolean("isLogin",false);
+        editor.apply();
+        intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
     }
 }

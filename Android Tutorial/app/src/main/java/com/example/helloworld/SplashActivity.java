@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
                 // lay du lieu trog file
                 boolean isLogin = sharedPreferences.getBoolean("isLogin",false);
                 if(isLogin){
-                    Intent intent = new Intent(SplashActivity.this,UpdateUserInfoActivity.class);
+                    Intent intent = new Intent(SplashActivity.this,HomeActivity.class);
                     startActivity(intent);
                     finish();
                 }else {
