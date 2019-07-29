@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.helloworld.recycleview.HistoryActivity;
+import com.example.helloworld.recycleview.PlacesActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
                 // lay du lieu trog file
                 boolean isLogin = sharedPreferences.getBoolean("isLogin",false);
                 if(isLogin){
-                    Intent intent = new Intent(SplashActivity.this, HistoryActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, PlacesActivity.class);
                     startActivity(intent);
                     finish();
                 }else {

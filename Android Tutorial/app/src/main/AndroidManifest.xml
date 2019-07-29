@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycleview.HistoryActivity"></activity>
+        <activity android:name=".recycleview.PlacesActivity"></activity>
+        <activity android:name=".recycleview.HistoryActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -26,7 +27,7 @@
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".UpdateUserInfoActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
