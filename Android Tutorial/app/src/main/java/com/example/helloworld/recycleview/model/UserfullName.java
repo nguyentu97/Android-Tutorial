@@ -1,4 +1,4 @@
-package com.example.helloworld.recycleview;
+package com.example.helloworld.recycleview.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

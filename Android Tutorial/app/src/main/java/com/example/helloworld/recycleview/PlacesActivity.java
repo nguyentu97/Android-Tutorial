@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.helloworld.R;
 import com.example.helloworld.Util.Util;
+import com.example.helloworld.recycleview.model.Places;
 
 import org.json.JSONArray;
 import org.json.JSONException;

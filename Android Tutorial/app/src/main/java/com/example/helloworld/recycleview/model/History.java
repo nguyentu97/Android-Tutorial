@@ -1,4 +1,4 @@
-package com.example.helloworld.recycleview;
+package com.example.helloworld.recycleview.model;
 
 public class History {
     int historyID;

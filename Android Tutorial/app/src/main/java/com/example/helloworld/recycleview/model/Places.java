@@ -1,9 +1,9 @@
-package com.example.helloworld.recycleview;
+package com.example.helloworld.recycleview.model;
 
 public class Places {
     String namePlaces;
-    int isMoreDetail;
-    int isPromotion;
+    public int isMoreDetail;
+    public int isPromotion;
 
     public Places() {
     }

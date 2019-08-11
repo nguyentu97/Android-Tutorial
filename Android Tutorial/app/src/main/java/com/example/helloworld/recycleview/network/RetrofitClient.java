@@ -1,4 +1,4 @@
-package com.example.helloworld.recycleview;
+package com.example.helloworld.recycleview.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

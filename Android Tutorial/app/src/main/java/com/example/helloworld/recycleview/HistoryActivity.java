@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.helloworld.R;
-import com.squareup.picasso.Picasso;
+import com.example.helloworld.recycleview.model.History;
 
 import org.json.JSONArray;
 import org.json.JSONException;

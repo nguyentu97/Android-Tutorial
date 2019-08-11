@@ -1,4 +1,4 @@
-package com.example.helloworld.recycleview;
+package com.example.helloworld.recycleview.model;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

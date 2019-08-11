@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.helloworld.R;
+import com.example.helloworld.recycleview.model.Places;
 
 import java.util.ArrayList;
 

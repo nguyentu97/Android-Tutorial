@@ -3,7 +3,7 @@ package com.example.helloworld.recycleview.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class ListCate {
+public class Category {
 
 @SerializedName("categoryID")
 @Expose
